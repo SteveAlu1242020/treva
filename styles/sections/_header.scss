@@ -1,0 +1,102 @@
+@import "../variables";
+@import "../mixins";
+
+.header-wrapper {
+  background: url("/treva/assets/Vector\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 46.875rem; //750px
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+
+  @include breakpoint-down(medium) {
+    height: 65rem;
+  }
+
+  .header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: $white;
+    padding-top: 8.4375rem; //135px
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-left {
+      &-wrapper {
+        max-width: 25.625rem; //410px
+        @include breakpoint-down(small) {
+          max-width: 250px;
+        }
+
+        .title {
+          h1 {
+            font-family: HKGrotesk-Medium;
+            font-weight: 800;
+          }
+        }
+        .separator {
+          span {
+            width: 1.5rem; //24px
+            height: 0.25rem; //4px
+            background: $separator;
+            display: block;
+          }
+
+          @include breakpoint-down(medium) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .description {
+          font-weight: 400;
+          opacity: 0.7;
+          line-height: 28px;
+        }
+
+        .call-to-action {
+          background: $primary;
+          color: $white;
+          font-family: HKGrotesk-Medium;
+          font-weight: 700;
+          line-height: 1.5rem;
+          letter-spacing: 0.5px;
+          cursor: pointer;
+          border: 1px solid $primary;
+          border-radius: 2px;
+          padding: 12px 20px;
+          transition: transform 200ms ease-in;
+
+          &:hover {
+            transform: scale(1.05);
+            transition: transform 150ms ease-out;
+          }
+        }
+      }
+
+      @include breakpoint-down(medium) {
+        order: 2;
+      }
+    }
+    &-right {
+      @include breakpoint-down(medium) {
+        order: 1;
+      }
+
+      img {
+        @include breakpoint-down(small) {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

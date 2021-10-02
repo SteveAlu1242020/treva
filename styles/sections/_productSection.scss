@@ -1,0 +1,175 @@
+@import "../variables";
+@import "../mixins";
+
+.product-section {
+  margin-top: 11.25rem; //180px
+  margin-bottom: 11.25rem;
+
+  @include breakpoint-down(medium) {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  &-wrapper {
+    display: flex;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_left {
+      flex: 1;
+      @include breakpoint-down(small) {
+        max-width: 300px;
+        text-align: center;
+      }
+      .product_display {
+        position: relative;
+        img {
+          margin-bottom: 1.75rem; //28px
+          //   width: 100%;
+          //   border: 1px solid red;
+          @include breakpoint-down(medium) {
+            width: 50%;
+          }
+        }
+        .left-arrow {
+          position: absolute;
+          top: 50%;
+          left: -46px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          img {
+            background: #f4f6f6;
+            padding: 7px 12px;
+            border-radius: 50%;
+          }
+        }
+        .right-arrow {
+          position: absolute;
+          top: 50%;
+          right: 46px;
+          transform: translateY(-50%);
+          cursor: pointer;
+          img {
+            background: #f4f6f6;
+            padding: 7px 12px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .product_gallery {
+        display: flex;
+        @include breakpoint-down(medium) {
+          flex-wrap: wrap;
+        }
+        > * {
+          height: 3.5rem; //56px
+          width: 3.5rem; //56px
+          margin-right: 0.75rem;
+          border-radius: 4px;
+          //   box-shadow: 0 0 5px gainsboro;
+        }
+      }
+    }
+
+    &_right {
+      flex: 1;
+      @include breakpoint-down(medium) {
+        max-width: 500px;
+      }
+
+      .product_info {
+        .title {
+          h1 {
+            font-weight: 700;
+            font-family: HKGrotesk-Bold;
+            line-height: 53px;
+            margin: 0;
+            padding: 0;
+            margin-bottom: -8px;
+          }
+        }
+        .description {
+          p {
+            font-weight: 400;
+            line-height: 30px;
+            color: #4f5659;
+            margin: 0;
+            padding: 0;
+            max-width: 515px;
+          }
+        }
+        .rating {
+          margin: 2rem 0;
+          padding: 0;
+          .star-wrapper {
+            img {
+              margin-right: -2px;
+            }
+            margin-right: 5px;
+          }
+        }
+
+        .color {
+          .title {
+          }
+          .color_grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+
+            .badge {
+              padding: 14px 12px;
+              box-sizing: border-box;
+              border-radius: 6px;
+              border: 1px solid #d8e0e2;
+              color: #545c5f;
+              font-weight: 400;
+              font-size: 13px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+
+            .badge-new {
+              position: relative;
+              .top {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                background: $badgeNew;
+                font-size: 10px;
+                border-radius: 4px 4px 0 0;
+                color: $white;
+              }
+            }
+
+            .badge-limited {
+              position: relative;
+              .top {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                background: $badgeLimited;
+                font-size: 10px;
+                border-radius: 4px 4px 0 0;
+                color: $white;
+              }
+            }
+
+            .badge-selected {
+              border: 2px solid black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

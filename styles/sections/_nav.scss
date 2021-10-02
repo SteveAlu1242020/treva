@@ -1,0 +1,162 @@
+@import "../variables";
+@import "../mixins";
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  nav {
+    .logo {
+      margin-top: 1.75rem; //28px
+      margin-right: 5.0625rem; //81px
+
+      @include breakpoint-down(medium) {
+        margin-right: 1rem;
+      }
+
+      @include breakpoint-down(small) {
+        margin-right: 0;
+      }
+    }
+
+    .desktop-menu {
+      .menu-wrapper {
+        margin-top: 1.875rem; // 30px
+        ul {
+          padding: 0;
+          margin: 0;
+          li {
+            list-style: none;
+            margin-right: 2.125rem; //34px
+            // hover start
+            position: relative;
+
+            &:hover::before {
+              position: absolute;
+              content: "";
+              display: block;
+              height: 0.25rem; //4px
+              width: 100%;
+              background: $separator;
+              top: 25px;
+              left: 0;
+              right: 0;
+            }
+
+            // hover end
+            a {
+              text-decoration: none;
+              color: $white;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+
+    .mobile-menu {
+      margin-top: 0.9375rem; //15px
+      > * {
+        width: 27px;
+        height: 3px;
+        display: block;
+        background: $white;
+        border-radius: 10px;
+
+        // &:not(:last-child) {
+        margin-bottom: 5px;
+        // }
+      }
+    }
+
+    .button-wrapper {
+      margin-top: 0.9375rem; //15px
+
+      .language-logo {
+      }
+      .login {
+      }
+      .sign-up {
+        button {
+          img {
+            margin-left: 10.67px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.login-btn {
+  font-family: HKGrotesk-Medium;
+  font-weight: 700;
+  line-height: 1.5rem;
+
+  padding: 9px 20px;
+  background: transparent;
+  outline: none;
+  color: $white;
+  border-radius: 2px;
+  border: 1px solid $primary;
+  cursor: pointer;
+  transition: 200ms ease-in;
+
+  margin-left: 1.2rem; //need to verify
+
+  letter-spacing: 0.5px;
+
+  @include breakpoint-down(medium) {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    background: $white;
+    color: $primary;
+  }
+}
+
+.signUp-btn {
+  background: $white;
+  color: $primary;
+  font-family: HKGrotesk-Medium;
+  font-weight: 700;
+  line-height: 1.5rem;
+  padding: 9px 20px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid $white;
+  cursor: pointer;
+  transition: 200ms ease-in;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 1rem; //need to verify
+
+  letter-spacing: 0.5px;
+
+  @include breakpoint-down(medium) {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  @include breakpoint-down(small) {
+    display: none;
+  }
+
+  &:hover {
+    background: transparent;
+    outline: none;
+    color: $white;
+  }
+}
+
+.sticky {
+  background: rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.75rem; //28px
+}

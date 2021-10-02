@@ -1,0 +1,27 @@
+@font-face {
+  src: url("/treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
+  font-family: HKGrotesk-Medium;
+}
+
+@font-face {
+  src: url("/treva/fonts/WRG-Font/HKGrotesk-Light.otf");
+  font-family: HKGrotesk-Light;
+}
+
+@font-face {
+  src: url("/treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
+  font-family: HKGrotesk-Bold;
+}
+
+$primary: #2783f3;
+$secondary: #00ba74;
+$black: #000000;
+$white: #ffffff;
+$separator: #58c19c;
+$badgeNew: #de742d;
+$badgeLimited: #a07edc;
+
+$font-sm: ""; //
+$font-med: ""; //
+$font-lg: ""; //
+$font-xlg: ""; //
