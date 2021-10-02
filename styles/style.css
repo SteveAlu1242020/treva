@@ -1,15 +1,15 @@
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
   font-family: HKGrotesk-Medium;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Light.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Light.otf");
   font-family: HKGrotesk-Light;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
   font-family: HKGrotesk-Bold;
 }
 
@@ -106,17 +106,17 @@ body {
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
   font-family: HKGrotesk-Medium;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Light.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Light.otf");
   font-family: HKGrotesk-Light;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
   font-family: HKGrotesk-Bold;
 }
 
@@ -281,22 +281,22 @@ body {
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
   font-family: HKGrotesk-Medium;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Light.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Light.otf");
   font-family: HKGrotesk-Light;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
   font-family: HKGrotesk-Bold;
 }
 
 .header-wrapper {
-  background: url("/treva/assets/Vector 1.png");
+  background: url("https://raw.githubusercontent.com/SteveAlu1242020/treva/main/assets/Vector%201.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,17 +424,17 @@ body {
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Medium.otf");
   font-family: HKGrotesk-Medium;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Light.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Light.otf");
   font-family: HKGrotesk-Light;
 }
 
 @font-face {
-  src: url("/treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
+  src: url("../../treva/fonts/WRG-Font/HKGrotesk-Bold.otf");
   font-family: HKGrotesk-Bold;
 }
 

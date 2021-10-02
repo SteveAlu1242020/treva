@@ -2,7 +2,10 @@
 @import "../mixins";
 
 .header-wrapper {
-  background: url("/treva/assets/Vector\ 1.png");
+  // background: url("/assets/Vector\ 1.png");
+  background: url("https://raw.githubusercontent.com/SteveAlu1242020/treva/main/assets/Vector%201.png");
+  // background: url("/assets/Vector\ 1.png");
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
